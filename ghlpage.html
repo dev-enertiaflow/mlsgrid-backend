@@ -1,0 +1,1681 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paul Mercer, Real Estate Listings | The Mercer Group · Tampa, FL</title>
+  <meta name="description"
+    content="Explore active luxury real estate listings by Paul Mercer and The Mercer Group with Keller Williams Tampa Properties." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23071220'/%3E%3Cstop offset='100%25' stop-color='%23122742'/%3E%3C/linearGradient%3E%3ClinearGradient id='gold' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23f5d77f'/%3E%3Cstop offset='50%25' stop-color='%23d4a738'/%3E%3Cstop offset='100%25' stop-color='%23aa7c1e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23bg)'/%3E%3Crect x='2' y='2' width='60' height='60' rx='12' fill='none' stroke='url(%23gold)' stroke-width='1.5' stroke-opacity='0.4'/%3E%3Cpath d='M32 14 L48 27 L48 48 L41 48 L41 33 L32 40 L23 33 L23 48 L16 48 L16 27 Z' fill='url(%23gold)'/%3E%3Ccircle cx='32' cy='24' r='2.5' fill='%23071220'/%3E%3C/svg%3E" />
+  <link rel="alternate icon" href="favicon.svg" type="image/svg+xml" />
+  <style>
+    :root {
+      --navy-950: #071220;
+      --navy-900: #0b1a2d;
+      --navy-800: #122742;
+      --navy-700: #1a3556;
+      --gold-600: #b58820;
+      --gold-500: #d4a738;
+      --gold-400: #eac565;
+      --gold-100: #fbf5e6;
+      --emerald-600: #059669;
+      --emerald-500: #10b981;
+      --emerald-100: #d1fae5;
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-300: #cbd5e1;
+      --slate-400: #94a3b8;
+      --slate-500: #64748b;
+      --slate-600: #475569;
+      --slate-700: #334155;
+      --slate-800: #1e293b;
+      --slate-900: #0f172a;
+      --white: #ffffff;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 4px 14px -2px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 12px 28px -6px rgba(15, 23, 42, 0.12);
+      --shadow-hover: 0 20px 35px -8px rgba(11, 26, 45, 0.16);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--slate-50);
+      color: var(--slate-900);
+      font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── Hero Header ─── */
+    .hero {
+      position: relative;
+      background: radial-gradient(circle at 80% 20%, rgba(212, 167, 56, 0.18) 0%, transparent 45%),
+        linear-gradient(135deg, var(--navy-950) 0%, var(--navy-900) 50%, var(--navy-800) 100%);
+      color: var(--white);
+      padding: 56px 24px 64px;
+      overflow: hidden;
+      border-bottom: 3px solid var(--gold-500);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(234, 197, 101, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(212, 167, 56, 0.14);
+      border: 1px solid rgba(234, 197, 101, 0.35);
+      border-radius: var(--radius-full);
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--gold-400);
+      margin-bottom: 16px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-eyebrow svg {
+      color: var(--gold-400);
+    }
+
+    .hero-title {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .hero-subtitle {
+      font-size: 19px;
+      font-weight: 500;
+      color: var(--slate-300);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .hero-subtitle .dot {
+      width: 5px;
+      height: 5px;
+      background: var(--gold-400);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .stat-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-md);
+      backdrop-filter: blur(10px);
+    }
+
+    .stat-pill strong {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--gold-400);
+    }
+
+    .stat-pill span {
+      font-size: 13px;
+      color: var(--slate-300);
+      font-weight: 500;
+    }
+
+    /* ─── Main Content Wrap ─── */
+    .main-wrap {
+      max-width: 1280px;
+      margin: -24px auto 80px;
+      padding: 0 24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ─── Filter Section ─── */
+    .filter-panel {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--slate-200);
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .filter-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--slate-200);
+    }
+
+    .quick-tabs {
+      display: flex;
+      gap: 8px;
+      background: var(--slate-100);
+      padding: 4px;
+      border-radius: var(--radius-full);
+    }
+
+    .tab-btn {
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-size: 13.5px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      background: transparent;
+      color: var(--slate-600);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover {
+      color: var(--slate-900);
+    }
+
+    .tab-btn.active {
+      background: var(--navy-900);
+      color: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .tab-btn.active.featured-tab {
+      background: linear-gradient(135deg, var(--gold-600), var(--gold-500));
+      color: var(--white);
+    }
+
+    .tab-badge {
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.22);
+      font-weight: 800;
+    }
+
+    .tab-btn:not(.active) .tab-badge {
+      background: var(--slate-200);
+      color: var(--slate-700);
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 260px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 11px 16px 11px 42px;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-full);
+      font-size: 14px;
+      font-family: inherit;
+      color: var(--slate-900);
+      background: var(--slate-50);
+      transition: all 0.2s;
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--gold-500);
+      background: var(--white);
+      box-shadow: 0 0 0 4px rgba(212, 167, 56, 0.14);
+    }
+
+    .search-box svg {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--slate-400);
+      pointer-events: none;
+    }
+
+    /* Dropdown Grid */
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+      align-items: end;
+    }
+
+    .filter-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .filter-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--slate-600);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .filter-select {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--slate-200);
+      background: var(--white);
+      color: var(--slate-800);
+      font-size: 13.5px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      transition: border-color 0.2s;
+    }
+
+    .filter-select:focus {
+      outline: none;
+      border-color: var(--gold-500);
+      box-shadow: 0 0 0 3px rgba(212, 167, 56, 0.12);
+    }
+
+    .btn-reset {
+      padding: 10px 18px;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      background: var(--slate-50);
+      color: var(--slate-600);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s;
+      height: 44px;
+    }
+
+    .btn-reset:hover {
+      background: var(--slate-200);
+      color: var(--slate-900);
+    }
+
+    /* ─── Result Header Bar ─── */
+    .results-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .results-count {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--slate-600);
+    }
+
+    .results-count strong {
+      color: var(--navy-900);
+      font-weight: 800;
+    }
+
+    .active-pills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    /* ─── Mobile Filter Toggle & Applied Chips ─── */
+    .mobile-filter-toggle {
+      display: none;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 18px;
+      border-radius: var(--radius-md);
+      background: var(--slate-100);
+      border: 1.5px solid var(--slate-200);
+      color: var(--navy-900);
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .mobile-filter-toggle:hover {
+      background: var(--slate-200);
+      border-color: var(--slate-300);
+    }
+
+    .toggle-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .toggle-left svg {
+      color: var(--gold-600);
+      flex-shrink: 0;
+    }
+
+    .filter-count-badge {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: var(--radius-full);
+      background: var(--gold-500);
+      color: var(--navy-950);
+      display: inline-flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+    }
+
+    .toggle-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--slate-500);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .toggle-arrow {
+      transition: transform 0.25s ease;
+      color: var(--slate-600);
+    }
+
+    .mobile-filter-toggle.is-open .toggle-arrow {
+      transform: rotate(180deg);
+    }
+
+    /* Applied Filters Strip (Always visible when filters active) */
+    .applied-filters-strip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 12px 16px;
+      background: rgba(212, 167, 56, 0.08);
+      border: 1px solid rgba(212, 167, 56, 0.28);
+      border-radius: var(--radius-md);
+      animation: fadeIn 0.2s ease;
+    }
+
+    .applied-label {
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--navy-900);
+      white-space: nowrap;
+    }
+
+    .applied-chips {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+
+    .filter-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      background: var(--white);
+      color: var(--navy-950);
+      border: 1px solid rgba(212, 167, 56, 0.45);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .filter-chip-remove {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: var(--slate-400);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px;
+      border-radius: 50%;
+      transition: all 0.15s;
+    }
+
+    .filter-chip-remove:hover {
+      color: #dc2626;
+      background: rgba(220, 38, 38, 0.12);
+      transform: scale(1.15);
+    }
+
+    .btn-clear-all {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--slate-600);
+      background: transparent;
+      border: none;
+      text-decoration: underline;
+      cursor: pointer;
+      padding: 4px 8px;
+      white-space: nowrap;
+      transition: color 0.15s;
+    }
+
+    .btn-clear-all:hover {
+      color: #dc2626;
+    }
+
+    /* ─── Grid ─── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+
+    /* ─── Card ─── */
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      color: inherit;
+      text-decoration: none;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s, border-color 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--slate-300);
+    }
+
+    .card.featured {
+      border: 2px solid var(--gold-500);
+      box-shadow: 0 4px 20px rgba(212, 167, 56, 0.18);
+    }
+
+    .card.featured:hover {
+      box-shadow: 0 16px 36px rgba(212, 167, 56, 0.25);
+    }
+
+    .media {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      background: #e2e8f0;
+      overflow: hidden;
+    }
+
+    .media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .card:hover .media img {
+      transform: scale(1.06);
+    }
+
+    .no-image {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: var(--slate-400);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .badges-top {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      pointer-events: none;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 11px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.94);
+      color: var(--slate-900);
+      backdrop-filter: blur(8px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .chip .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--emerald-500);
+      box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+    }
+
+    .chip.featured-chip {
+      background: linear-gradient(135deg, var(--gold-600), var(--gold-500));
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 2px 10px rgba(181, 136, 32, 0.4);
+    }
+
+    .photo-count-badge {
+      position: absolute;
+      bottom: 10px;
+      right: 12px;
+      background: rgba(15, 23, 42, 0.78);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: var(--radius-full);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Card Body */
+    .card-body {
+      padding: 20px 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+
+    .price {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--navy-900);
+    }
+
+    .address-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--slate-900);
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13.5px;
+      color: var(--slate-500);
+      font-weight: 500;
+    }
+
+    .location svg {
+      color: var(--gold-500);
+      flex-shrink: 0;
+    }
+
+    .stats {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      padding-top: 14px;
+      border-top: 1px solid var(--slate-100);
+    }
+
+    .stat {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--slate-700);
+    }
+
+    .stat svg {
+      color: var(--navy-800);
+      flex-shrink: 0;
+    }
+
+    .card-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      background: var(--slate-50);
+      border-top: 1px solid var(--slate-100);
+      font-size: 12px;
+      color: var(--slate-500);
+      font-weight: 600;
+    }
+
+    .card-foot .view-cta {
+      color: var(--gold-600);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: gap 0.2s;
+    }
+
+    .card:hover .card-foot .view-cta {
+      gap: 7px;
+    }
+
+    .card-attribution {
+      font-size: 11.5px;
+      color: var(--slate-500);
+      margin-top: 6px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--slate-200);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 500;
+    }
+
+    /* ─── MLS / IDX Compliance Footer ─── */
+    .mls-compliance-footer {
+      margin-top: 48px;
+      padding: 24px 28px;
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      color: var(--slate-500);
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    .compliance-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      color: var(--navy-900);
+      font-size: 13px;
+    }
+
+    .idx-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      background: var(--navy-900);
+      color: var(--gold-400);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      border-radius: 4px;
+    }
+
+    .compliance-text {
+      margin-bottom: 10px;
+    }
+
+    .compliance-copyright {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--slate-100);
+      font-size: 11.5px;
+      color: var(--slate-400);
+    }
+
+    /* ─── Pagination ─── */
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin: 40px 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .page-btn {
+      min-width: 42px;
+      height: 42px;
+      padding: 0 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--slate-200);
+      background: var(--white);
+      color: var(--slate-700);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .page-btn:hover:not(:disabled) {
+      border-color: var(--navy-900);
+      color: var(--navy-900);
+      background: var(--slate-100);
+    }
+
+    .page-btn.active {
+      background: var(--navy-900);
+      color: var(--white);
+      border-color: var(--navy-900);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .page-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .page-ellipsis {
+      padding: 0 8px;
+      color: var(--slate-400);
+      font-weight: 700;
+    }
+
+    /* ─── Empty & Skeletons ─── */
+    .empty-state {
+      text-align: center;
+      padding: 80px 24px;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      border: 1px dashed var(--slate-300);
+      color: var(--slate-500);
+      grid-column: 1 / -1;
+    }
+
+    .empty-state svg {
+      color: var(--gold-500);
+      margin-bottom: 16px;
+    }
+
+    .empty-state h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy-900);
+      margin-bottom: 8px;
+    }
+
+    .empty-state p {
+      font-size: 14.5px;
+      max-width: 440px;
+      margin: 0 auto 20px;
+    }
+
+    .skeleton {
+      background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+    .sk-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--slate-200);
+    }
+
+    .sk-img {
+      aspect-ratio: 16 / 10;
+    }
+
+    .sk-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sk-line {
+      height: 16px;
+      border-radius: 4px;
+    }
+
+    .sk-line.w-price {
+      height: 26px;
+      width: 50%;
+    }
+
+    .sk-line.w-title {
+      width: 85%;
+    }
+
+    .sk-line.w-sub {
+      width: 60%;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 30px;
+      }
+
+      .hero-subtitle {
+        font-size: 15px;
+      }
+
+      .filter-panel {
+        padding: 16px;
+        gap: 14px;
+      }
+
+      .mobile-filter-toggle {
+        display: flex;
+      }
+
+      .filter-grid {
+        display: none;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding-top: 14px;
+        border-top: 1px solid var(--slate-200);
+      }
+
+      .filter-grid.is-open {
+        display: grid;
+      }
+
+      .applied-filters-strip {
+        padding: 10px 12px;
+        gap: 8px;
+      }
+
+      .price {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Full Width Luxury Hero Header -->
+  <header class="hero">
+    <div class="hero-wrap">
+      <div class="hero-eyebrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z" />
+        </svg>
+        Exclusive Brokerage Portfolio · Tampa Bay & Beyond
+      </div>
+      <h1 class="hero-title">Paul Mercer, Real Estate Listings</h1>
+      <div class="hero-subtitle">
+        <span>The Mercer Group</span>
+        <span class="dot"></span>
+        <span>Tampa, FL</span>
+        <span class="dot"></span>
+        <span style="color: var(--gold-400); font-size: 16px; font-weight: 600;">Keller Williams Tampa Properties</span>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-pill">
+          <strong id="stat-total-props">...</strong>
+          <span>Office Listings</span>
+        </div>
+        <div class="stat-pill">
+          <strong id="stat-mercer-props">...</strong>
+          <span>Paul Mercer Exclusives</span>
+        </div>
+        <div class="stat-pill">
+          <strong id="stat-cities-count">...</strong>
+          <span>Cities Covered</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-wrap">
+    <!-- Filter Panel -->
+    <section class="filter-panel" aria-label="Search and filter listings">
+      <!-- Quick Tabs and Search -->
+      <div class="filter-top-bar">
+        <div class="quick-tabs">
+          <button class="tab-btn active" id="tab-all" onclick="setExclusiveFilter(false)">
+            All Properties
+            <span class="tab-badge" id="badge-all-count">...</span>
+          </button>
+          <button class="tab-btn featured-tab" id="tab-mercer" onclick="setExclusiveFilter(true)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true">
+              <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z" />
+            </svg>
+            Paul Mercer Exclusives
+            <span class="tab-badge" id="badge-mercer-count">...</span>
+          </button>
+        </div>
+
+        <div class="search-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+          <input type="text" id="filter-search" placeholder="Search address, city, zip code..."
+            oninput="handleFilterChange()" />
+        </div>
+      </div>
+
+      <!-- Mobile Collapsible Filter Toggle (Visible on screens <= 768px) -->
+      <button class="mobile-filter-toggle" id="mobile-filter-toggle" onclick="toggleMobileFilters()" type="button"
+        aria-expanded="false" aria-controls="filter-grid">
+        <div class="toggle-left">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+          </svg>
+          <span>Filter Properties</span>
+          <span class="filter-count-badge" id="filter-count-badge" style="display:none;">0 Active</span>
+        </div>
+        <div class="toggle-right">
+          <span id="toggle-hint">Show Filters</span>
+          <svg class="toggle-arrow" id="toggle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </div>
+      </button>
+
+      <!-- Applied Active Filters Strip (Prominently displayed with ✕ buttons to dismiss individual filters) -->
+      <div class="applied-filters-strip" id="applied-filters-strip" style="display: none;">
+        <span class="applied-label">Applied:</span>
+        <div class="applied-chips" id="applied-chips"></div>
+        <button class="btn-clear-all" onclick="resetFilters()" title="Reset all filters">Clear All</button>
+      </div>
+
+      <!-- Dropdown Filter Controls -->
+      <div class="filter-grid" id="filter-grid">
+        <div class="filter-field">
+          <label class="filter-label" for="filter-city">City / Area</label>
+          <select class="filter-select" id="filter-city" onchange="handleFilterChange()">
+            <option value="">All Cities</option>
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label class="filter-label" for="filter-type">Property Type</label>
+          <select class="filter-select" id="filter-type" onchange="handleFilterChange()">
+            <option value="">All Types</option>
+            <option value="Residential">Residential</option>
+            <option value="Residential Income">Residential Income</option>
+            <option value="Residential Lease">Residential Lease</option>
+            <option value="Land">Land</option>
+            <option value="Commercial Sale">Commercial Sale</option>
+            <option value="Commercial Lease">Commercial Lease</option>
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label class="filter-label" for="filter-min-price">Min Price</label>
+          <select class="filter-select" id="filter-min-price" onchange="handleFilterChange()">
+            <option value="">No Min</option>
+            <option value="150000">$150,000</option>
+            <option value="250000">$250,000</option>
+            <option value="350000">$350,000</option>
+            <option value="500000">$500,000</option>
+            <option value="750000">$750,000</option>
+            <option value="1000000">$1,000,000</option>
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label class="filter-label" for="filter-max-price">Max Price</label>
+          <select class="filter-select" id="filter-max-price" onchange="handleFilterChange()">
+            <option value="">No Max</option>
+            <option value="300000">$300,000</option>
+            <option value="450000">$450,000</option>
+            <option value="600000">$600,000</option>
+            <option value="800000">$800,000</option>
+            <option value="1200000">$1,200,000</option>
+            <option value="2500000">$2,500,000+</option>
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label class="filter-label" for="filter-beds">Bedrooms</label>
+          <select class="filter-select" id="filter-beds" onchange="handleFilterChange()">
+            <option value="">Any Beds</option>
+            <option value="1">1+ Beds</option>
+            <option value="2">2+ Beds</option>
+            <option value="3">3+ Beds</option>
+            <option value="4">4+ Beds</option>
+            <option value="5">5+ Beds</option>
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label class="filter-label" for="filter-baths">Bathrooms</label>
+          <select class="filter-select" id="filter-baths" onchange="handleFilterChange()">
+            <option value="">Any Baths</option>
+            <option value="1">1+ Baths</option>
+            <option value="2">2+ Baths</option>
+            <option value="3">3+ Baths</option>
+            <option value="4">4+ Baths</option>
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label class="filter-label" for="filter-sort">Sort By</label>
+          <select class="filter-select" id="filter-sort" onchange="handleFilterChange()">
+            <option value="featured">Featured First</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="beds-desc">Bedrooms: High to Low</option>
+            <option value="living-area-desc">Size: Largest Sq Ft</option>
+          </select>
+        </div>
+
+        <div>
+          <button class="btn-reset" onclick="resetFilters()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+              <path d="M3 3v5h5" />
+            </svg>
+            Reset
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Status Bar -->
+    <div class="results-bar" id="results-bar">
+      <div class="results-count" id="results-count">Loading listings...</div>
+      <div class="active-pills" id="active-pills"></div>
+    </div>
+
+    <!-- Listings Grid -->
+    <div class="grid" id="listings-grid"></div>
+
+    <!-- Pagination Controls -->
+    <nav class="pagination" id="pagination-controls" aria-label="Pagination"></nav>
+
+    <!-- Official Stellar MLS / MLS Grid IDX Compliance Footer -->
+    <footer class="mls-compliance-footer">
+      <div class="compliance-badge">
+        <span class="idx-badge">IDX</span>
+        <strong>Stellar MLS · MLS GRID Compliance Notice</strong>
+      </div>
+      <p class="compliance-text">
+        Based on information submitted to the MLS GRID as of <strong id="compliance-timestamp">recently</strong>
+        (updated every 15 minutes). All data is obtained from various sources and may not
+        have been verified by broker or MLS GRID. Supplied information is subject to change without notice. All
+        information should be independently reviewed and verified for accuracy. Properties may or may not be listed by
+        the office/agent presenting the information.
+      </p>
+      <p class="compliance-text">
+        IDX information is provided exclusively for consumers' personal, non-commercial use, and may not be used for any
+        purpose other than to identify prospective properties consumers may be interested in purchasing.
+      </p>
+      <div class="compliance-copyright">
+        <span>Information is deemed reliable but is not guaranteed.</span>
+        <span>© 2026 Stellar MLS / MLS GRID. All rights reserved.</span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // ══════════════════════════════════════════════════════════════════════════════════
+    // CONFIGURATION & GHL INTEGRATION
+    // ══════════════════════════════════════════════════════════════════════════════════
+    const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.protocol === "file:";
+
+    // 1. Express API Backend (ngrok for testing, or localhost if run locally, or your deployed cloud server)
+    const PRIMARY_API = isLocal ? "http://localhost:3000" : "https://gesticular-steamtight-svetlana.ngrok-free.dev";
+    const SECONDARY_API = isLocal ? "https://gesticular-steamtight-svetlana.ngrok-free.dev" : "http://localhost:3000";
+
+    // 2. Office & Agent IDs (from GHL custom values or fallback defaults)
+    const officeId = ("{{ custom_values.mls_office_id }}".includes("{{") ? "MFR771620" : "{{ custom_values.mls_office_id }}") || "MFR771620";
+    const agentId = ("{{ custom_values.mls_agent_id }}".includes("{{") ? "MFR261510833" : "{{ custom_values.mls_agent_id }}") || "MFR261510833";
+
+    // 3. Single Listing Detail Page Destination
+    // When a user clicks a property card, they are redirected to this URL with ?listingKey=[KEY]
+    // In GHL, you can either:
+    //   Option A: Set a Custom Value named {{ custom_values.mls_single_page_url }}
+    //   Option B: Paste your exact GHL single listing page URL directly below:
+    const GHL_SINGLE_PAGE_URL = ("{{ custom_values.mls_single_page_url }}".includes("{{")
+      ? "https://link.enertiaflow.com/preview/7aj4ThJxiNVaqxvXovnW" // <-- Your live GHL Single Listing Page URL
+      : "{{ custom_values.mls_single_page_url }}");
+
+    const PREVIEW_BASE_URL = isLocal ? "singlepage.html" : GHL_SINGLE_PAGE_URL;
+
+    // State
+    let allListings = [];
+    let filteredListings = [];
+    let currentPage = 1;
+    const PER_PAGE = 12;
+    let onlyMercer = false;
+
+    // DOM Elements
+    const grid = document.getElementById("listings-grid");
+    const resultsCount = document.getElementById("results-count");
+    const activePills = document.getElementById("active-pills");
+    const paginationControls = document.getElementById("pagination-controls");
+    const filterCity = document.getElementById("filter-city");
+
+    // Icons
+    const svg = (p, s = 16) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
+    const ICON = {
+      bed: svg('<path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/>'),
+      bath: svg('<path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.7 3 4 3.7 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M17 19v2"/>'),
+      area: svg('<path d="M21 3H3v18h18z"/><path d="M3 9h6V3"/><path d="M21 15h-6v6"/>'),
+      pin: svg('<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>', 14),
+      camera: svg('<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/>', 12),
+      star: svg('<path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/>', 13),
+      arrow: svg('<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>', 14),
+      chevronLeft: svg('<path d="m15 18-6-6 6-6"/>', 14),
+      chevronRight: svg('<path d="m9 18 6-6-6-6"/>', 14),
+      home: svg('<path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-7h6v7"/>', 44),
+    };
+
+    const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    const cleanMlsId = (id) => String(id ?? "").replace(/^MFR/, "");
+
+    function formatMlsTimestamp(ts) {
+      if (!ts) return "recently";
+      try {
+        const d = new Date(ts);
+        const dateStr = d.toLocaleDateString("en-US", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+          timeZone: "America/New_York",
+        });
+        const timeStr = d.toLocaleTimeString("en-US", {
+          hour: "numeric",
+          minute: "2-digit",
+          timeZone: "America/New_York",
+        });
+        return `${dateStr} at ${timeStr}`;
+      } catch (_) {
+        return ts;
+      }
+    }
+
+    function formatPrice(p) {
+      if (!p) return "Price unavailable";
+      return "$" + Number(p).toLocaleString("en-US");
+    }
+
+    function getFirstImage(raw) {
+      const media = raw?.Media;
+      if (!media?.length) return null;
+      return [...media].sort((a, b) => (a.Order ?? 0) - (b.Order ?? 0))[0]?.MediaURL || null;
+    }
+
+    function renderSkeletons(n = 6) {
+      grid.innerHTML = Array(n).fill(`
+        <div class="sk-card">
+          <div class="skeleton sk-img"></div>
+          <div class="sk-body">
+            <div class="skeleton sk-line w-price"></div>
+            <div class="skeleton sk-line w-title"></div>
+            <div class="skeleton sk-line w-sub"></div>
+          </div>
+        </div>`).join("");
+    }
+
+    // Populate City filter from loaded listings
+    function populateCityFilter(listings) {
+      const cities = [...new Set(listings.map((l) => l.city).filter(Boolean))].sort();
+      filterCity.innerHTML = '<option value="">All Cities (' + cities.length + ')</option>';
+      cities.forEach((c) => {
+        const opt = document.createElement("option");
+        opt.value = c;
+        opt.textContent = c.charAt(0) + c.slice(1).toLowerCase();
+        filterCity.appendChild(opt);
+      });
+      document.getElementById("stat-cities-count").textContent = cities.length;
+    }
+
+    // Set Exclusive Tab Filter
+    function setExclusiveFilter(mercerOnly) {
+      onlyMercer = mercerOnly;
+      document.getElementById("tab-all").classList.toggle("active", !mercerOnly);
+      document.getElementById("tab-mercer").classList.toggle("active", mercerOnly);
+      currentPage = 1;
+      applyFilters();
+    }
+
+    function handleFilterChange() {
+      currentPage = 1;
+      applyFilters();
+    }
+
+    function resetFilters() {
+      document.getElementById("filter-search").value = "";
+      document.getElementById("filter-city").value = "";
+      document.getElementById("filter-type").value = "";
+      document.getElementById("filter-min-price").value = "";
+      document.getElementById("filter-max-price").value = "";
+      document.getElementById("filter-beds").value = "";
+      document.getElementById("filter-baths").value = "";
+      document.getElementById("filter-sort").value = "featured";
+      onlyMercer = false;
+      document.getElementById("tab-all").classList.add("active");
+      document.getElementById("tab-mercer").classList.remove("active");
+      currentPage = 1;
+      applyFilters();
+    }
+
+    // Core Filtering Logic
+    function applyFilters() {
+      const search = document.getElementById("filter-search").value.trim().toLowerCase();
+      const city = document.getElementById("filter-city").value;
+      const type = document.getElementById("filter-type").value;
+      const minPrice = parseFloat(document.getElementById("filter-min-price").value) || 0;
+      const maxPrice = parseFloat(document.getElementById("filter-max-price").value) || Infinity;
+      const minBeds = parseInt(document.getElementById("filter-beds").value, 10) || 0;
+      const minBaths = parseInt(document.getElementById("filter-baths").value, 10) || 0;
+      const sort = document.getElementById("filter-sort").value;
+
+      filteredListings = allListings.filter((l) => {
+        // Exclusive Paul Mercer filter
+        if (onlyMercer && l.agent_mls_id !== agentId && l.raw_data?.ListAgentMlsId !== agentId) {
+          return false;
+        }
+
+        // Search text (address, city, zip, listing_key)
+        if (search) {
+          const raw = l.raw_data ?? {};
+          const fullAddr = `${raw.StreetNumber || ""} ${raw.StreetName || ""} ${l.city || ""} ${l.postal_code || ""} ${l.listing_key || ""}`.toLowerCase();
+          if (!fullAddr.includes(search)) return false;
+        }
+
+        // City
+        if (city && l.city !== city) return false;
+
+        // Property Type
+        if (type && l.property_type !== type) return false;
+
+        // Price
+        const price = l.list_price || 0;
+        if (price < minPrice || price > maxPrice) return false;
+
+        // Beds
+        if (minBeds > 0 && (l.bedrooms_total || 0) < minBeds) return false;
+
+        // Baths
+        if (minBaths > 0 && (l.bathrooms_total || 0) < minBaths) return false;
+
+        return true;
+      });
+
+      // Sorting
+      filteredListings.sort((a, b) => {
+        const aIsMercer = a.agent_mls_id === agentId || a.raw_data?.ListAgentMlsId === agentId;
+        const bIsMercer = b.agent_mls_id === agentId || b.raw_data?.ListAgentMlsId === agentId;
+
+        if (sort === "featured") {
+          if (aIsMercer && !bIsMercer) return -1;
+          if (!aIsMercer && bIsMercer) return 1;
+          return (b.list_price || 0) - (a.list_price || 0);
+        }
+        if (sort === "price-desc") return (b.list_price || 0) - (a.list_price || 0);
+        if (sort === "price-asc") return (a.list_price || 0) - (b.list_price || 0);
+        if (sort === "beds-desc") return (b.bedrooms_total || 0) - (a.bedrooms_total || 0);
+        if (sort === "living-area-desc") return (b.living_area || 0) - (a.living_area || 0);
+        return 0;
+      });
+
+      renderCurrentPage();
+    }
+
+    // Render Paginated Cards
+    function renderCurrentPage() {
+      const total = filteredListings.length;
+      const totalPages = Math.ceil(total / PER_PAGE) || 1;
+      if (currentPage > totalPages) currentPage = totalPages;
+
+      const startIndex = (currentPage - 1) * PER_PAGE;
+      const endIndex = Math.min(startIndex + PER_PAGE, total);
+      const pageListings = filteredListings.slice(startIndex, endIndex);
+
+      // Results Bar Text
+      if (total === 0) {
+        resultsCount.innerHTML = `No properties match your current filters`;
+      } else {
+        resultsCount.innerHTML = `Showing <strong>${startIndex + 1}–${endIndex}</strong> of <strong>${total}</strong> ${total === 1 ? 'property' : 'properties'}`;
+      }
+
+      // Render Active Filter Pills
+      renderActivePills();
+
+      // Empty State
+      if (!pageListings.length) {
+        grid.innerHTML = `
+          <div class="empty-state">
+            ${ICON.home}
+            <h3>No Properties Found</h3>
+            <p>We couldn't find any listings matching your specific criteria. Try adjusting your price range, city, or clearing the filters.</p>
+            <button class="btn-reset" onclick="resetFilters()">Reset All Filters</button>
+          </div>`;
+        paginationControls.innerHTML = "";
+        return;
+      }
+
+      // Render Cards
+      grid.innerHTML = pageListings.map((l) => {
+        const isMercer = l.agent_mls_id === agentId || l.raw_data?.ListAgentMlsId === agentId;
+        const raw = l.raw_data ?? {};
+        const imgUrl = getFirstImage(raw);
+        const mediaCount = raw.Media?.length || 0;
+        const street = `${raw.StreetNumber || ""} ${raw.StreetName || ""} ${raw.StreetSuffix || ""}`.trim() || raw.UnparsedAddress || "Address Upon Request";
+        const cityLine = [l.city, l.postal_code ? "FL " + l.postal_code : ""].filter(Boolean).join(", ");
+        const beds = l.bedrooms_total ?? "—";
+        const baths = l.bathrooms_total ?? "—";
+        const sqft = l.living_area ? Number(l.living_area).toLocaleString() + " sq ft" : "—";
+        const previewUrl = `${PREVIEW_BASE_URL}?listingKey=${encodeURIComponent(l.listing_key)}`;
+
+        const mediaHtml = imgUrl
+          ? `<img src="${esc(imgUrl)}" alt="${esc(street)}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=no-image>Photo not available</div>'">`
+          : `<div class="no-image">Photo not available</div>`;
+
+        return `
+        <a class="card${isMercer ? " featured" : ""}" href="${previewUrl}" title="View details for ${esc(street)}">
+          <div class="media">
+            ${mediaHtml}
+            <div class="badges-top">
+              <span class="chip"><span class="dot"></span>Active</span>
+              ${isMercer ? `<span class="chip featured-chip">${ICON.star}Paul Mercer Exclusive</span>` : ""}
+            </div>
+            ${mediaCount > 1 ? `<div class="photo-count-badge">${ICON.camera}${mediaCount}</div>` : ""}
+          </div>
+
+          <div class="card-body">
+            <div class="price">${formatPrice(l.list_price)}</div>
+            <div class="address-title">${esc(street)}</div>
+            <div class="location">${ICON.pin}<span>${esc(cityLine) || "Tampa Bay Area"}</span></div>
+
+            <div class="stats">
+              <span class="stat" title="${beds} Bedrooms">${ICON.bed}${beds} bd</span>
+              <span class="stat" title="${baths} Bathrooms">${ICON.bath}${baths} ba</span>
+              <span class="stat" title="${sqft}">${ICON.area}${sqft}</span>
+            </div>
+            <div class="card-attribution">Courtesy of: ${esc(raw.ListOfficeName || "Keller Williams Tampa Properties")}</div>
+          </div>
+
+          <div class="card-foot">
+            <span>${esc(l.property_type || "Residential")} · #${esc(cleanMlsId(l.listing_key))}</span>
+            <span class="view-cta">View Details ${ICON.arrow}</span>
+          </div>
+        </a>`;
+      }).join("");
+
+      // Render Pagination Buttons
+      renderPagination(totalPages);
+    }
+
+    function toggleMobileFilters() {
+      const grid = document.getElementById("filter-grid");
+      const toggleBtn = document.getElementById("mobile-filter-toggle");
+      const hint = document.getElementById("toggle-hint");
+      if (!grid || !toggleBtn) return;
+
+      const isOpen = grid.classList.toggle("is-open");
+      toggleBtn.classList.toggle("is-open", isOpen);
+      toggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      if (hint) hint.textContent = isOpen ? "Hide Filters" : "Show Filters";
+    }
+
+    function removeFilter(type) {
+      if (type === "mercer") {
+        setExclusiveFilter(false);
+        return;
+      }
+      if (type === "search") document.getElementById("filter-search").value = "";
+      if (type === "city") document.getElementById("filter-city").value = "";
+      if (type === "type") document.getElementById("filter-type").value = "";
+      if (type === "minPrice") document.getElementById("filter-min-price").value = "";
+      if (type === "maxPrice") document.getElementById("filter-max-price").value = "";
+      if (type === "beds") document.getElementById("filter-beds").value = "";
+      if (type === "baths") document.getElementById("filter-baths").value = "";
+      currentPage = 1;
+      applyFilters();
+    }
+
+    function renderActivePills() {
+      const city = document.getElementById("filter-city").value;
+      const type = document.getElementById("filter-type").value;
+      const search = document.getElementById("filter-search").value.trim();
+      const minPrice = document.getElementById("filter-min-price").value;
+      const maxPrice = document.getElementById("filter-max-price").value;
+      const beds = document.getElementById("filter-beds").value;
+      const baths = document.getElementById("filter-baths").value;
+
+      const applied = [];
+      if (onlyMercer) applied.push({ key: "mercer", label: "Paul Mercer Exclusives" });
+      if (search) applied.push({ key: "search", label: `Search: "${esc(search)}"` });
+      if (city) applied.push({ key: "city", label: `City: ${esc(city)}` });
+      if (type) applied.push({ key: "type", label: `Type: ${esc(type)}` });
+      if (minPrice) applied.push({ key: "minPrice", label: `Min: $${Number(minPrice).toLocaleString()}` });
+      if (maxPrice) applied.push({ key: "maxPrice", label: `Max: $${Number(maxPrice).toLocaleString()}` });
+      if (beds) applied.push({ key: "beds", label: `Beds: ${beds}+` });
+      if (baths) applied.push({ key: "baths", label: `Baths: ${baths}+` });
+
+      // Update mobile toggle badge
+      const badge = document.getElementById("filter-count-badge");
+      if (badge) {
+        if (applied.length > 0) {
+          badge.style.display = "inline-flex";
+          badge.textContent = `${applied.length} Active`;
+        } else {
+          badge.style.display = "none";
+        }
+      }
+
+      // Update dedicated applied filters strip
+      const strip = document.getElementById("applied-filters-strip");
+      const chipsContainer = document.getElementById("applied-chips");
+      if (strip && chipsContainer) {
+        if (applied.length > 0) {
+          strip.style.display = "flex";
+          chipsContainer.innerHTML = applied.map((item) => `
+            <span class="filter-chip">
+              <span>${item.label}</span>
+              <button class="filter-chip-remove" onclick="removeFilter('${item.key}')" aria-label="Remove ${esc(item.label)}">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 6 6 18"/>
+                  <path d="m6 6 12 12"/>
+                </svg>
+              </button>
+            </span>
+          `).join("");
+        } else {
+          strip.style.display = "none";
+          chipsContainer.innerHTML = "";
+        }
+      }
+
+      if (activePills) {
+        activePills.innerHTML = "";
+      }
+    }
+
+    // Numbered Pagination Bar
+    function renderPagination(totalPages) {
+      if (totalPages <= 1) {
+        paginationControls.innerHTML = "";
+        return;
+      }
+
+      let html = "";
+
+      // Previous button
+      html += `<button class="page-btn" ${currentPage === 1 ? "disabled" : ""} onclick="goToPage(${currentPage - 1})" aria-label="Previous page">
+        ${ICON.chevronLeft} Prev
+      </button>`;
+
+      // Page numbers with ellipsis
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+          html += `<button class="page-btn ${i === currentPage ? "active" : ""}" onclick="goToPage(${i})">${i}</button>`;
+        } else if (i === currentPage - 3 || i === currentPage + 3) {
+          html += `<span class="page-ellipsis">...</span>`;
+        }
+      }
+
+      // Next button
+      html += `<button class="page-btn" ${currentPage === totalPages ? "disabled" : ""} onclick="goToPage(${currentPage + 1})" aria-label="Next page">
+        Next ${ICON.chevronRight}
+      </button>`;
+
+      paginationControls.innerHTML = html;
+    }
+
+    function goToPage(page) {
+      currentPage = page;
+      renderCurrentPage();
+      document.getElementById("results-bar").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    // Load from Database (Direct Supabase API)
+    async function loadListings() {
+      renderSkeletons(12);
+
+      try {
+        const params = new URLSearchParams({ officeId });
+        if (agentId) params.append("agentId", agentId);
+
+        let res;
+        try {
+          res = await fetch(`${PRIMARY_API}/api/listings?${params}`, {
+            headers: { "ngrok-skip-browser-warning": "true" },
+          });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        } catch (primErr) {
+          console.warn("Primary API failed, falling back to secondary:", primErr.message);
+          res = await fetch(`${SECONDARY_API}/api/listings?${params}`, {
+            headers: { "ngrok-skip-browser-warning": "true" },
+          });
+        }
+        const data = await res.json();
+        if (!data.success) throw new Error(data.message);
+
+        allListings = data.listings || [];
+
+        // Count stats
+        const mercerListings = allListings.filter(
+          (l) => l.agent_mls_id === agentId || l.raw_data?.ListAgentMlsId === agentId
+        );
+
+        document.getElementById("stat-total-props").textContent = allListings.length;
+        document.getElementById("stat-mercer-props").textContent = mercerListings.length;
+        document.getElementById("badge-all-count").textContent = allListings.length;
+        document.getElementById("badge-mercer-count").textContent = mercerListings.length;
+
+        if (data.lastUpdated) {
+          const tsEl = document.getElementById("compliance-timestamp");
+          if (tsEl) tsEl.textContent = formatMlsTimestamp(data.lastUpdated);
+        }
+
+        populateCityFilter(allListings);
+        applyFilters();
+      } catch (err) {
+        grid.innerHTML = `
+          <div class="empty-state">
+            <h3>Unable to Load Properties</h3>
+            <p>${esc(err.message)}</p>
+            <button class="btn-reset" onclick="loadListings()">Retry</button>
+          </div>`;
+        resultsCount.textContent = "Error loading data from database";
+      }
+    }
+
+    loadListings();
+  </script>
+</body>
+
+</html>
