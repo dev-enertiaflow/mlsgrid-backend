@@ -10,6 +10,11 @@ other/
 *.log
 npm-debug.log*
 
+# Frontend GoHighLevel Pages (Hosted in GHL)
+*.html
+favicon.svg
+
 # OS Files
 .DS_Store
 Thumbs.db
+
