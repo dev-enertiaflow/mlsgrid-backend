@@ -10,8 +10,10 @@ other/
 *.log
 npm-debug.log*
 
-# Frontend GoHighLevel Pages (Hosted in GHL)
+# Frontend GoHighLevel Pages & Docs (Hosted in GHL)
 *.html
+*.docx
+*.md
 favicon.svg
 
 # OS Files

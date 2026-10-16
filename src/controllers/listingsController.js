@@ -90,4 +90,59 @@ const getListing = async (req, res) => {
   res.json({ success: true, feedLastSyncAt: feedSyncAt, listing: data });
 };
 
-module.exports = { getListings, getListing };
+const getFeaturedListings = async (req, res) => {
+  const { agentId, officeId, limit } = req.query;
+
+  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+  console.log('⭐ FEATURED LISTINGS REQUEST');
+  console.log('   agentId    :', agentId  ?? 'NOT PROVIDED');
+  console.log('   officeId   :', officeId ?? 'OPTIONAL');
+  console.log('   limit      :', limit    ?? 'ALL');
+  console.log('   IP         :', req.ip);
+  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+
+  if (!agentId) {
+    console.log('❌ REJECTED: agentId is missing');
+    return res.status(400).json({ success: false, message: 'agentId is required' });
+  }
+
+  let query = supabase
+    .from('listings')
+    .select('listing_key, office_mls_id, agent_mls_id, modification_timestamp, list_price, standard_status, city, postal_code, bedrooms_total, bathrooms_total, property_type, living_area, raw_data')
+    .eq('agent_mls_id', agentId)
+    .eq('mlg_can_view', true)
+    .order('list_price', { ascending: false });
+
+  if (officeId) {
+    query = query.eq('office_mls_id', officeId);
+  }
+
+  if (limit && !isNaN(parseInt(limit, 10))) {
+    query = query.limit(parseInt(limit, 10));
+  }
+
+  const { data, error } = await query;
+
+  if (error) {
+    console.log('❌ SUPABASE ERROR (featured):', error.message);
+    return res.status(500).json({ success: false, message: error.message });
+  }
+
+  const feedSyncAt = getLastFeedSyncAt() || new Date().toISOString();
+  console.log('✅ Returning featured listings count:', data.length);
+  if (data.length > 0) {
+    data.slice(0, 3).forEach((l, i) => {
+      console.log(`   [${i + 1}] ${l.listing_key} | $${l.list_price} | ${l.city}`);
+    });
+  }
+  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+
+  res.json({
+    success: true,
+    count: data.length,
+    lastUpdated: feedSyncAt,
+    listings: data,
+  });
+};
+
+module.exports = { getListings, getListing, getFeaturedListings };
